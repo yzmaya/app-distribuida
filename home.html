@@ -4,7 +4,10 @@
   <title>Vato Negro</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---->
   <meta http-equiv="Content-Security-Policy" content="default-src https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://www.gstatic.com https://apis.google.com https://yzmaya.github.io https://fonts.googleapis.com https://vue-test-e6acb.firebaseapp.com https://www.googleapis.com; child-src 'none'; object-src 'none'">
+  <meta name="google-site-verification" content="S2jThbJL30wF4EeZVQDVUEm4cHdOrkEuSpwlPddAbDI" />
+
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -290,36 +293,7 @@ Más tarde exploró el jazz cuando era adolescente con Delbert Felix y optó por
 </footer>
 
 <script type="text/javascript" src="js/home.js"></script>
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
+<script type="text/javascript" src="js/animate.js"></script>
 
 </body>
 </html>
