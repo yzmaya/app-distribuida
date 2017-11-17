@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vato Negro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Vato Negro</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">INICIO</a></li>
+        <li><a href="#band">BANDA</a></li>
+        <li><a href="#tour">GIRA</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+        <li class="dropdown">
+          <a class="test" data-toggle="dropdown"></a>
+          <ul class="dropdown-menu">
+            <li id="btnLogout"><a href="#"><span class="glyphicon glyphicon-user"></span> Cerrar Sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/slide1.jpg" alt="New York" width="1200" height="500">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img/ny.jpg" alt="Chicago" width="1200" height="500">
+        <div class="carousel-caption">
+        
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="img/slide3.jpg" alt="Los Angeles" width="1200" height="500">
+        <div class="carousel-caption">
+         
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>VATO NEGRO</h3>
+ 
+  <p>Vato Negro, lanzado en el 2008.
+La tónica sigue siendo la misma, puras improvisacionesalgunas de las cuales rebasan los 15 minutos de duración mientras que otras no llegan siquiera al minuto.
+Con el tiempo, Omar Rodríguez López se integraría a la banda y tendrían una rotación constante de bateristas hasta llegar a Deantoni Parks para convertirse en trío.
+En un sentido estricto, es un proyecto de Juan Alderete porque él fue el fundador de la banda, no Omar.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Juan Alderete</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="img/alderete.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Bajista</p>
+        <p>5 de septiembre de 1963 </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Omar Rodriguez</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="img/ORL.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Guitarrista</p>
+        <p>1 de septiembre de 1975</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Deantoni Parks</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="img/deantoni.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Baterista</p>
+        <p>2 de noviembre de 1977</p>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">GIRA 2017</h3>
+    <p class="text-center">Venta de Boletos!</p>
+    <ul class="list-group">
+      <li class="list-group-item"> Septiembre <span class="label label-danger"> Sold Out!</span></li>
+      <li class="list-group-item"> Octubre <span class="label label-danger">Sold Out!</span></li> 
+      <li class="list-group-item"> Noviembre <span class="label label-danger">Sold Out!</span></li> 
+       <li class="list-group-item"> Diciembre <span class="badge">16</span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/paris.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Paris</strong></p>
+          <p>Viernes 22  de Diciembre 2017</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Comprar Boletos</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/newyork.jpg" alt="New York" width="400" height="300">
+          <p><strong>Nueva York</strong></p>
+          <p>Sábado 23 de Diciembre 2017</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Comprar Boletos</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/sanfran.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>San Francisco</strong></p>
+          <p>Domingo 24 Diciembre 2017</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Comprar Boletos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Boletos</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Enviar a</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pagar 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancelar
+          </button>
+          <p>Necesitas  <a href="#">ayuda?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contacto</h3>
+  <p class="text-center"><em>Queremos escucharte</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">Acerca de los miembros</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Juan Alderete</a></li>
+    <li><a data-toggle="tab" href="#menu1">Omar Rodriguez</a></li>
+    <li><a data-toggle="tab" href="#menu2">Deantoni Parks</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2> Músico, compositor</h2>
+      <p style="text-align: justify;">Alderete nació en Los Angeles, CA, el cuarto de cinco hijos.
+
+Estaba expuesto semanalmente a la música jazz por su padre, que era un gran admirador de la música jazz, y que a menudo la tocaba en la casa Alderete. Las otras influencias tempranas de Alderete incluyeron álbumes de rock progresivo de su hermano , que incluyeron bandas como Yes , Rush , King Crimson , etc. Comenzó a aprender los principios básicos del bajo cuando tenía 16 años, y fue influenciado por jugadores como Jaco Pastorius , Geddy Lee y Stanley Clarke . Su fascinación por el bajo giraba en torno a que era un instrumento algo "subestimado" en ese momento.
+
+Después de la escuela secundaria, Juan se inscribió en el Instituto de Músicos en Hollywood (Los Ángeles, CA). Disfrutó su tiempo en la escuela y explicó que pudo aprender técnicas y estilos que nunca había considerado antes de su inscripción. Juan y su compañero Paul Gilbert comenzaron su relación musical durante una audición que Paul sostuvo para encontrar un baterista. Juan apareció en la audición, trayendo a un estudiante del Instituto del Músico y amigo de la batería llamado Bill Lescohier. Aunque Lescohier fue rechazado por el papel, Paul quedó impresionado con el bajo de Juan; los dos buscaron rápidamente formar una banda de velocidad de metal que incorporaría el avanzado metal neoclásico de Paultécnica de guitarra con las líneas de bajo sólidas de Juan. Para completar la banda, Harry Gschoesser se unió para ocupar el puesto de baterista, y Jeff Martin se convirtió en el vocalista; el grupo se llamó a sí mismos Racer X (un título que Lescohier había sugerido). Con esta formación, la banda lanzó su álbum debut, Street Lethal , en 1986. Juan ha estado grabando con Racer X desde entonces (nota: hubo un paréntesis de diez años a partir de 1989), y su último álbum fue lanzado en 2002, titulado Getting Heavier . Juan es acreditado como John Alderete en todos los álbumes de Racer X.
+
+Sin embargo, cuatro años después de la creación de la banda, Paul Gilbert dejó Racer X para formar la banda Mr. Big . Los miembros restantes de Racer X decidieron mantenerse activos en la música, aunque siguieron caminos separados. Durante los próximos diez años, Juan estuvo involucrado en varias bandas diferentes (incluyendo The Scream, DC-10, Big Sir y Distortion Felix) y también se convirtió en instructor en Musicians Institute. Poco tiempo después, lanzó su primer video instructivo sobre técnicas de bajo y modulación .</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Guitarrista
+Productor musical</h2>
+      <p style="text-align: justify;">Omar Rodríguez-López creció en El Paso, Texas. Después de irse de Texas antes de los 18 años, viajó por América. Durante este tiempo vio que su vida no iba a ningún lado, entonces llamó a su amigo Cedric Bixler-Zavala quien le sugirió que regresara a El Paso. Con ayuda de Bixler-Zavala, pudo regresar a El Paso donde se unió a At The Drive-In como bajista y vocalista de respaldo. Después de firmar un contrato con Flipside y grabar Acrobatic Tenement pasó a ser el guitarrista oficial.
+
+Omar Rodríguez-López ha pasado la mayoría de su carrera trabajando, y a menudo viviendo, con su gran amigo, Cedric Bixler-Zavala. Ambos tocaron juntos en la banda de poshardcore At the Drive-In. Mientras pertenecían a dicha banda, formaron una banda dub reggae llamada De Facto. En el 2001, ambos dejaron At the Drive-In, de la cual eran integrantes desde 1993, en "interrupción indefinida" para formar la banda "The Mars Volta". Además, Cedric aparece en el disco A Manual Dexterity: Soundtrack Volume 1 de Rodríguez-López, banda sonora de la película, del mismo nombre, de Rodríguez-López. La fecha de lanzamiento de esta película ha sido pospuesta indefinidamente.
+
+Como guitarrista, Rodríguez-López es conocido por su estilo experimental, creativo y atonal, caracterizado por acordes inusuales y progresiones complejas y cambios frecuentes de compás, solos improvisados y experimentación sin descanso. Rodríguez-López dice saber muy poco de teoría musical, aunque las melodías en los solos del primer álbum de "The Mars Volta" De-loused in the Comatorium demuestran una significativa habilidad y variedad.
+
+Omar Rodríguez-López es un guitarrista visionario y moderno en términos de innovación y experimentación. Su estilo muestra una gran semejanza al guitarrista de King Crimson, Robert Fripp, y a John Frusciante ya que dichos guitarristas usan armonías atonales y tritonales. Parece ser que Fripp tiene una considerable influencia en Rodríguez-López. Sin embargo, Rodríguez ha dicho que sus principales influencias artísticas no han sido musicales, a excepción de su gurú, el pianista de salsa Larry Harlow. Rodríguez cita al comediante Lenny Bruce, el director de cine Werner Herzog, el antropólogo Carlos Castañeda y el cienasta Marcelo Ortega como cinco influencias importantes.2​ El hecho de que estas personas no sean músicos resalta el acercamiento no convencional de Rodríguez a su medio, diferenciándolo de otros guitarristas de esta era y pasadas.
+
+Omar Rodríguez-López está nombrado por toda la música escuchada en el lanzamiento del 2005 de The Mars Volta, Frances the Mute. Recientemente también ha terminado de producir el siguiente álbum de la banda de Los Ángeles Radio Vago.
+
+En 2009, la banda ganó un Grammy en la categoría Best Hard Rock Performance por la canción Wax Simulacra.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Músico, compositor, actor, productor de discos, Percusionista</h2>
+      <p style="text-align: justify;">Deantoni nació y creció en Newnan, Georgia. Las preferencias musicales de su familia se inclinaron hacia el funk, el soul sureño y el gospel, y con todo su apoyo comenzó a tocar la batería cuando tenía dos años. Fue puesto en el centro de atención nacional antes de la edad de cinco años como resultado de su práctica y actuación con la banda Newnan High School. Xernona Clayton de The Xernona Clayton Show transmitido por WAGA-TV en Atlanta lo entrevistó para un segmento de transmisión nacional que se emitió en 1982.
+
+Más tarde exploró el jazz cuando era adolescente con Delbert Felix y optó por inscribirse en Berklee College of Music , donde estudió con Lenny Nelson y la exposición a Photek , Squarepusher y Hidden Agenda centró su atención en los ritmos mecanicistas de la música electrónica.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Vato Negro | Derechos Registrados 2017</a></p> 
+</footer>
+
+<script type="text/javascript" src="js/home.js"></script>
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
