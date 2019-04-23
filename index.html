@@ -6,7 +6,7 @@
 
 <meta charset="utf-8">
  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">-->
- <meta http-equiv="Content-Security-Policy" content="default-src https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://www.gstatic.com https://apis.google.com https://yzmaya.github.io https://vue-test-e6acb.firebaseapp.com https://www.googleapis.com; child-src 'none'; object-src 'none'">
+ <meta http-equiv="Content-Security-Policy" content="default-src https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com https://www.gstatic.com https://apis.google.com https://yzmaya.github.io https://vue-test-e6acb.firebaseapp.com https://www.googleapis.com; worker-src 'none'; object-src 'none'">
 <meta name="google-site-verification" content="S2jThbJL30wF4EeZVQDVUEm4cHdOrkEuSpwlPddAbDI" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,46 +24,6 @@
  <h1>My NotePress</h1>
 
    <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Iniciar Sesión con Correo Electrónico</h4>
-        </div>
-        <div class="modal-body">
-         
-                  
-    <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input id="txtEmail" type="text" class="form-control" name="email" placeholder="Correo Electrónico" required="">
-    </div>
-    <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-    <input id="txtPassword" type="password" class="form-control" name="password" placeholder="Contraseña" required="">
-    </div>
-    <br>
-       <p id="demo" class="error"></p>
-       <p id="demo2" class="prevent"></p>
-    <div class="input-group">
-      <button id="btnLogin" class="btn btn-success">Iniciar Sesión</button> 
-      
-      
-    </div>
-
-
-               
-        </div>
-        <div class="modal-footer">
-          <button id = "btnSignUp" class="btn btn-info">Registrarse</button>  
-          <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
 
   
 </div>
@@ -77,7 +37,6 @@
 
               <button type="button" class="btn btn-danger btn-block login" data-toggle="modal" data-target="#" id="btnGoogle">Gmail</button>
               <button type="button" class="btn btn-primary btn-block login" data-toggle="modal" data-target="#" id="btnFacebook">Facebook</button>
-        <button type="button" class="btn btn-info btn-block login" data-toggle="modal" data-target="#myModal"> Correo Electrónico</button>
             </div>
 
         </div>
